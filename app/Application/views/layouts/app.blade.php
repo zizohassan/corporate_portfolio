@@ -104,6 +104,7 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="{{ url('/') }}">Home</a></li>
+                        @php $page = page() @endphp
                         <li><a href="{{ url('/page/'.$page->slug) }}">{{ getDefaultValueKey($page->title) }}</a></li>
                         <li><a href="{{ url('services') }}">Services</a></li>
                         <li><a href="{{ url('work') }}">Portfolio</a></li>
